@@ -6,6 +6,7 @@ Ejemplo: Para "Antonio Alberto Jesús" devolverá 3.
 
 function contarPalabras(nombre){
     let cuenta = 1;
+    nombre = nombre.trim();
     for (let i = 0; i <= nombre.length; i++){
         if (nombre[i] === ' '){
             cuenta++;
@@ -13,4 +14,4 @@ function contarPalabras(nombre){
     }
     return cuenta;
 }
-contarPalabras('Eduardo Fatou Cerrato');
+contarPalabras(' Eduardo Fatou Cerrato ');
